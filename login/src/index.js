@@ -7,9 +7,8 @@ import reportWebVitals from "./reportWebVitals";
 // import list
 import { Provider } from "react-redux";
 import { applyMiddleware, createStore } from "redux";
-
-import promiseMiddlerware from "redux-promise";
-import reduxThunk from "redux-thuck";
+import promiseMiddlerware from "redux-promise-middleware";
+import reduxThunk from "redux-thunk";
 
 const createStoreWidthMiddleware = applyMiddleware(
   promiseMiddlerware,
@@ -19,14 +18,17 @@ const createStoreWidthMiddleware = applyMiddleware(
 ReactDOM.render(
   <React.StrictMode>
     {/* <Provider
-      store={createStoreWidthMiddleware()
-      // 리듀서 생성 후 여기에 넣어준다.
+      store={
+        createStoreWidthMiddleware()
+        // 리듀서 생성 후 여기에 넣어준다.
 
-      //개발자 도구를 사용하기 위한 설정
-      
+        //개발자 도구를 사용하기 위한 설정
+
+        // window.__REDUX_DEVTOOLS_EXTENSION__&&
+        // window.__REDUX_DEVTOOLS_EXTENSION__()
       }
     > */}
-      <App />
+    <App />
     {/* </Provider> */}
   </React.StrictMode>,
 
