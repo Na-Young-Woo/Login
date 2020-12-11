@@ -4,6 +4,8 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+import { BrowserRouter } from "react-router-dom";
+
 // import list
 import { Provider } from "react-redux";
 import { applyMiddleware, createStore } from "redux";
@@ -16,7 +18,7 @@ const createStoreWidthMiddleware = applyMiddleware(
 )(createStore);
 
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
     {/* <Provider
       store={
         createStoreWidthMiddleware()
@@ -30,7 +32,7 @@ ReactDOM.render(
     > */}
     <App />
     {/* </Provider> */}
-  </React.StrictMode>,
+  </BrowserRouter>,
 
   document.getElementById("root")
 );
