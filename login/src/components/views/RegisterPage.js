@@ -45,6 +45,21 @@ function RegisterPage(props) {
       <form onSubmit={onSubmitHandler}>
         <label>Email</label>
         <input type="email" value={Email} onChange={onEmailHandler} />
+
+        <label>Name</label>
+        <input value={name} onChange={onNameHandler} />
+
+        <label>Password</label>
+        <input type="password" value={passWord} onChange={onPassWordHandler} />
+
+        <label>confirmPassWord</label>
+        <input
+          type="password"
+          value={confirmPassWord}
+          onChange={onconfirmPassWordHandler}
+        />
+
+        <button type="submit">회원가입</button>
       </form>
     </RegisterBlock>
   );
