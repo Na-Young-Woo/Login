@@ -8,7 +8,7 @@ function App() {
     <>
       <LandingPage></LandingPage>
       <RegisterPage></RegisterPage>
-      <LoginPage></LoginPage>
+      {/* <LoginPage></LoginPage> */}
     </>
   );
 }
