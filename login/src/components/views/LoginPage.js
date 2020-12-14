@@ -20,7 +20,14 @@ function LoginPage() {
 
   return (
     <LoginBlock>
-      <form></form>
+      <form>
+        <label>E-mail</label>
+        <input type="email"> </input>
+        <label>Password</label>
+        <input type="password"></input>
+        <br />
+        <button type="submit">Login</button>
+      </form>
     </LoginBlock>
   );
 }
