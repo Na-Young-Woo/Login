@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import { withRouter } from "react-router-dom";
 
-const LoginBlock = styled.div`
+const LandingBlock = styled.div`
   background: #4263eb;
   color: #fff;
 
@@ -23,11 +23,11 @@ function LandingPage(props) {
   const onClickHandler = () => {};
   return (
     <div>
-      <LoginBlock>
+      <LandingBlock>
         <h2>시작 페이지</h2>
 
         <button onClick={onClickHandler}>로그아웃</button>
-      </LoginBlock>
+      </LandingBlock>
     </div>
   );
 }
